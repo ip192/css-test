@@ -1,0 +1,17 @@
+
+.form {
+    --new-x: 'output';
+}
+
+.form {
+    width: 100%;
+    border: 1px solid;
+}
+.form label {
+    margin: 20px;
+    display: block;
+}
+.form output:after {
+    margin: 20px;
+    content: var(--new-x);
+}
