@@ -6,6 +6,7 @@
 .form {
     width: 100%;
     border: 1px solid;
+    padding: 20px;
 }
 .form label {
     margin: 20px;
@@ -14,4 +15,23 @@
 .form output:after {
     margin: 20px;
     content: var(--new-x);
+}
+.down {
+    display: block;
+    all: initial;
+    width: 200px;
+    border: 1px solid #d1d1d1;
+    border-radius: 4px;
+    padding: 4px;
+    font-size: 12px;
+}
+.down:focus {
+    font-size: 16px !important;
+}
+.down:focus {
+    font-size: 32px;
+}
+.download {
+    display: block;
+    text-underline: none;
 }
