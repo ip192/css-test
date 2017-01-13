@@ -4,7 +4,9 @@
   "description": "first try",
   "main": "index.js",
   "dependencies": {
-    "react": "^15.4.2"
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-router": "^3.0.1"
   },
   "devDependencies": {},
   "scripts": {
@@ -15,7 +17,7 @@
     "url": "git+https://github.com/ip192/css-test.git"
   },
   "keywords": [
-    "[]"
+    ""
   ],
   "author": "ip192",
   "license": "MIT",

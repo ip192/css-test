@@ -1,6 +1,6 @@
 .idea/
 /css-test.iml
-js/others/jquery-3.1.1.js
-/html/template.html
+original/js/others/jquery-3.1.1.js
+/original/html/template.html
 node_modules/
 
