@@ -1,0 +1,26 @@
+{
+  "name": "css-test",
+  "version": "1.0.0",
+  "description": "first try",
+  "main": "index.js",
+  "dependencies": {
+    "react": "^15.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ip192/css-test.git"
+  },
+  "keywords": [
+    "[]"
+  ],
+  "author": "ip192",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ip192/css-test/issues"
+  },
+  "homepage": "https://github.com/ip192/css-test#readme"
+}
