@@ -20,12 +20,12 @@ $(document).ready(function () {
     //     return a * 10 + b;
     // }));
 
-    console.log(eval('["1","2","3","4"]').map(Number));
+    simpleConsole(eval('["1","2","3","4"]').map(Number));
 
-    console.log(['aBc', 'Def', 'hiJ', 'KLm', 'nOP', 'QRS', 'tuv'].map(function (str) {
-        var reg = /(\b)[a-z](?=[a-z])*/;
-        return str.replace(reg, '#');
-    }));
+    // console.log(['aBc', 'Def', 'hiJ', 'KLm', 'nOP', 'QRS', 'tuv'].map(function (str) {
+    //     var reg = /(\b)[a-z](?=[a-z])*/;
+    //     return str.replace(reg, '#');
+    // }));
 
 });
 
@@ -33,3 +33,6 @@ function pow(x) {
     return x*x;
 }
 
+function simpleConsole(content) {
+    console.log(`%c${content}`, 'background-color: black; color: white; font-size: 20px');
+}
