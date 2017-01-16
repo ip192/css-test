@@ -20,12 +20,18 @@ $(document).ready(function () {
     //     return a * 10 + b;
     // }));
 
-    simpleConsole(eval('["1","2","3","4"]').map(Number));
+    // simpleConsole(eval('["1","2","3","4"]').map(Number));
 
     // console.log(['aBc', 'Def', 'hiJ', 'KLm', 'nOP', 'QRS', 'tuv'].map(function (str) {
     //     var reg = /(\b)[a-z](?=[a-z])*/;
     //     return str.replace(reg, '#');
     // }));
+
+    // simpleConsole(document.getElementById('data-test').dataset.content);
+    var ele = document.getElementById('data-testt');
+    simpleConsole(ele.dataset.contentChange);
+    ele.dataset.contentChange = 'changed';
+    simpleConsole(ele.dataset.contentChange);
 
 });
 
