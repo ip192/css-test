@@ -40,11 +40,21 @@ label a {
     text-decoration: none;
 }
 
-details span {
+.details span {
     line-height: 2;
     display: inline-block;
     text-indent: 1em;
 }
+.details .details {
+    margin-top: 0;
+}
+summary:hover {
+    cursor: pointer;
+}
+summary:focus {
+    outline: none;
+}
+
 
 div[id='data-test'], div[id='data-testt'] {
     background: gray;
@@ -58,6 +68,8 @@ div[data-content-change='change content'] {
 div[data-content-change='changed'] {
     color: yellow;
 }
+
+
 
 
 

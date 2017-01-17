@@ -16,9 +16,9 @@ $(document).ready(function () {
     //     return a + b;
     // }));
 
-    // console.log('"12345" to 12345:', str_2.split('').map(Number).reduce(function (a, b) {
-    //     return a * 10 + b;
-    // }));
+    console.log('"12345" to 12345:', str_2.split('').map(Number).reduce((a, b) => {
+        return a * 10 + b;
+    }));
 
     // simpleConsole(eval('["1","2","3","4"]').map(Number));
 
@@ -28,11 +28,13 @@ $(document).ready(function () {
     // }));
 
     // simpleConsole(document.getElementById('data-test').dataset.content);
-    var ele = document.getElementById('data-testt');
-    simpleConsole(ele.dataset.contentChange);
-    ele.dataset.contentChange = 'changed';
-    simpleConsole(ele.dataset.contentChange);
+    // var ele = document.getElementById('data-testt');
+    // simpleConsole(ele.dataset.contentChange);
+    // ele.dataset.contentChange = 'changed';
+    // simpleConsole(ele.dataset.contentChange);
 
+    const a = 'this is a const-value';
+    console.log(a);
 });
 
 function pow(x) {

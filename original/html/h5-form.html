@@ -33,16 +33,18 @@
 
         <label>search选择器：&nbsp;<input type="search" class="search"></label>
 
-        <output></output>
+        <label>
+            input + datalist
+            <input class="down" type="text" list="frame">
+            <datalist id="frame">
+                <option value="yes"></option>
+                <option value="no"></option>
+                <option value="who"></option>
+                <option value="when"></option>
+                <option value="where"></option>
+            </datalist>
+        </label>
 
-        <input class="down" type="text" list="frame">
-        <datalist id="frame">
-            <option value="yes"></option>
-            <option value="no"></option>
-            <option value="who"></option>
-            <option value="when"></option>
-            <option value="where"></option>
-        </datalist>
 
         <label>a标签-下载<a href="" class="download" download="a-download.zip">download</a></label>
 
@@ -51,14 +53,22 @@
             <span title="这是span标签的悬停额外内容">鼠标悬停，显示额外内容</span>
         </label>
 
-        <details>
+        <details class="details">
             <summary>This is summary text.</summary>
             <span>This is detail text.</span>
+            <details class="details">
+                <summary>This is also a summary text</summary>
+                <span>This is also a detail text.</span>
+            </details>
         </details>
 
         <label>
             <div id="data-test" data-content="this is data content">this is a test for data-content</div>
             <div id="data-testt" data-content-change="change content">this is a test about change data-content-change</div>
+        </label>
+
+        <label>
+            <div contenteditable="true">content is editable</div>
         </label>
     </form>
 
