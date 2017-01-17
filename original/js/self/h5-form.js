@@ -42,3 +42,7 @@ function pow(x) {
 function simpleConsole(content) {
     console.log(`%c${content}`, 'background-color: black; color: white; font-size: 20px');
 }
+
+function progressChange(value) {
+    console.log(value);
+}
