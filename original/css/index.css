@@ -1,16 +1,25 @@
-.wrap{
-    margin: 300px auto;
-    width: 1024px;
-    left: 0;
-    right: 0;
-    position: relative;
+.wrapper{
     text-align: center;
     font-size: 24px;
     color: aqua;
 }
 
+.wrapper .title, .wrapper .items {
+    margin: 100px;
+}
 
-
-
+.items a {
+    text-decoration: none;
+    color: aqua;
+    border-radius: 20px;
+    padding: 6px;
+}
+.items a:hover {
+    color: white;
+    background-color: aqua;
+}
+.items>div {
+    margin: 50px auto;
+}
 
 
