@@ -17,7 +17,7 @@ function voice() {
     const str = '0,1,2,3,4,5';
     console.log(arr);
 
-    // split: 把数组用 - 连接起来，返回结果字符串
+    // join: 把数组用 - 连接起来，返回结果字符串
     console.log('join:', arr.join('-'));
 
     // splice: 把arr的0-3元素删除并返; 替换: 从index为 1 的开始，把后面的 2 个替换为 add
@@ -32,4 +32,5 @@ function voice() {
     // split: 分割字符串成数组
     console.log(str.split(',', 4).map(Number));
 
+    console.log(Math.random().toString());
 })();

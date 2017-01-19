@@ -48,3 +48,12 @@ function simpleConsole(content) {
 function progressChange(value) {
     console.log(value);
 }
+
+var changDiv = document.getElementsByClassName('out-div')[0];
+function changeSize(value) {
+    // changDiv.clientHeight = 200 + parseInt(value);
+    // console.log(changDiv.clientHeight, parseInt(value));
+    changDiv.style.height = `${200 + parseInt(value)}px`;
+    changDiv.style.width = `${200 + parseInt(value)}px`;
+}
+

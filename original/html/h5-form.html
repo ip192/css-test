@@ -68,8 +68,22 @@
         </label>
 
         <label>
-            <div contenteditable="true">content is editable</div>
+            <span contenteditable="true">content is editable</span>
         </label>
+
+        <label>
+            <span class="cursor-hide">隐藏鼠标指针(font-size * line-height = height?)</span>
+        </label>
+    </form>
+
+
+    <form>
+        <input value="0" type="range" id="change-size" oninput="changeSize(this.value)" />
+        <div class="out-div">
+            <div class="inner-div">
+
+            </div>
+        </div>
     </form>
 
 </div>
