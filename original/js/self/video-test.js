@@ -14,7 +14,7 @@ function voice() {
 
 (() => {
     let arr = [0, 1, 2, 3, 4, 5];
-    const str = '0,1,2,3,4,5';
+    const str = '0  1  2  3  4  5';
     console.log(arr);
 
     // join: 把数组用 - 连接起来，返回结果字符串
@@ -30,7 +30,7 @@ function voice() {
     console.log('slice', arr.slice(1, 3));
 
     // split: 分割字符串成数组
-    console.log(str.split(',', 4).map(Number));
+    console.log(str.split(' ', 4).map(Number));
 
     console.log(Math.random().toString());
 })();
