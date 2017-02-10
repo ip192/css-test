@@ -10,4 +10,41 @@ function readTxt() {
 
 $(document).ready(function () {
     console.log("toString" in {});
+
+    // const req = new XMLHttpRequest();
+    // req.onreadystatechange = function () {
+    //     console.log(this.responseText);
+    // };
+    // req.open('GET', 'http://www.w3schools.com/js/demo_jsonp.php', true);
+    // req.setRequestHeader('Access-Control-Allow-Origin', '*');
+    // req.setRequestHeader('Access-Control-Allow-Credentials', 'true');
+    // req.send(null);
+
+
+    // $.ajax({
+    //     url: 'https://gold.xitu.io',
+    //     dataType: 'jsonp',
+    //     crossDomain: true,
+    //     success:
+    //         function (data) {
+    //             // console.log(data);
+    //         },
+    //     error:
+    //         function (error) {
+    //             console.log(error);
+    //         }
+    // });
+
+    // $.getJSON('http://api.flickr.com/services/feeds/photos_public.gne?callback=',{tags: "dogs",tagmode: "any",format: "json"}, function (response) {
+    //     console.log(response);
+    //     document.getElementById('jsonp').innerText = response.toString();
+    // });
+
+    // const scriptt = document.createElement('script');
+    // scriptt.src = 'https://gold.xitu.io/post/58948f1b0ce4630056f3a629?callback=jsonpTest';
+    // document.body.insertBefore(scriptt, document.body.firstElementChild)
 });
+
+// function jsonpTest(response) {
+//     console.log(response);
+// }

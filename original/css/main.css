@@ -18,3 +18,11 @@ body {
     position: relative;
     background-color: #FFF;
 }
+
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+
