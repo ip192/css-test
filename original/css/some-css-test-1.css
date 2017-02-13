@@ -181,14 +181,15 @@ q::after {
 .out {
     width: 180px;
     height: 180px;
-    background: yellow;
+    position: relative;
     left: 50%;
     top: 50%;
 }
 .in {
-    width: 90px;
-    height: 90px;
+    width: 180px;
+    height: 180px;
     background: green;
+    margin: -50% 0 0 -50%;
 }
 
 .out-2 {
@@ -196,26 +197,29 @@ q::after {
     height: 200px;
     margin: 20px 0;
 }
-.out-2 .main {
+.out-2 .bg {
     float: left;
     width: 100%;
     background: #39c;
     height: 300px;
 }
-.out-2 .sub {
+.out-2 .left {
     float: left;
-    width: 250px;
+    width: 61.8%;
     margin-left: -100%;
     background:#f60;
     height:300px;
 }
-.out-2 .extra {
+.out-2 .right {
     float: left;
-    width: 190px;
-    margin-left: -190px;
+    width: 14%;
+    margin-left: -14%;
     background:#666;
     height:300px;
 }
+
+
+
 
 
 
