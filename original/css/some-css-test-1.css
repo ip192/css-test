@@ -122,11 +122,109 @@ a {
     100% { background-color: #f5f5f5 }
 }
 
+p q {
+    quotes: "【" "】" "《" "》";
+}
+q::before {
+    font-size: 32px;
+}
+q::after {
+    font-size: 32px;
+}
+.q {
+    quotes: '%' '%' ' (' ')';
+}
+.q::before {
+    content: open-quote;
+    font-size: 32px;
+}
+.q::after {
+    content: close-quote;
+    font-size: 32px;
+}
+
+#content-attr::after {
+    content: attr(id);
+}
+
+.content-counter {
+    counter-increment: increase;
+    /*counter-reset: descendant; // 可以用来实现子列表的序号*/
+}
+.content-counter::before {
+    content: counter(increase)'. ';
+    font-size: 12px;
+    color: cadetblue;
+}
+
+.vertical-test {
+    position: relative;
+}
+.vertical-title {
+    margin: 0 30px 10px;
+    display: inline-block;
+    transform-origin: left top;
+    transform: rotate(90deg);
+}
+.new-vertical {
+    margin: 0 10px 0;
+}
+.new-vertical h3 {
+    writing-mode: vertical-lr;
+}
+
+.margin-minus {
+    width: 100%;
+    height: 250px;
+    border: 1px dashed;
+}
+.out {
+    width: 180px;
+    height: 180px;
+    background: yellow;
+    left: 50%;
+    top: 50%;
+}
+.in {
+    width: 90px;
+    height: 90px;
+    background: green;
+}
+
+.out-2 {
+    width: 600px;
+    height: 200px;
+    margin: 20px 0;
+}
+.out-2 .main {
+    float: left;
+    width: 100%;
+    background: #39c;
+    height: 300px;
+}
+.out-2 .sub {
+    float: left;
+    width: 250px;
+    margin-left: -100%;
+    background:#f60;
+    height:300px;
+}
+.out-2 .extra {
+    float: left;
+    width: 190px;
+    margin-left: -190px;
+    background:#666;
+    height:300px;
+}
+
+
 
 
 
 
 .outer-bottom {
+    border: 1px solid aqua;
+    margin-top: 100px;
     bottom: 0;
 }
 .outer-bottom::after {
