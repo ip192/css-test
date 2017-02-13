@@ -1,0 +1,134 @@
+.clear-test {
+    background-color: darkseagreen;
+    width: 300px;
+    height: 50px;
+    border: 5px solid darkred;
+    clear: both;
+}
+
+.fl {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    margin: 10px;
+}
+.no-float {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
+
+.showGeo {
+    background-color: aqua;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.border-test {
+    clear: both;
+    width: 400px;
+    height: 100px;
+    border: 10px solid;
+    border-image: url('http://www.zhangxinxu.com/study/image/border.png') 27;
+    -webkit-border-image: url('http://www.zhangxinxu.com/study/image/border.png') 27;
+}
+
+[class='geo'] {
+    margin-top: 100px;
+}
+
+[class*='span'] {
+    color: aqua;
+    font-size: 20px;
+    font-family: "Yuanti SC";
+    display: block;
+}
+[class^='start'] {
+    color: chartreuse;
+    font-size: 20px;
+    font-family: "Heiti SC";
+    display: block;
+}
+[class$=\-123] { /* \-123 => '-123' */
+    color: yellow;
+    font-size: 20px;
+    font-family: "PingFang SC";
+    display: block;
+}
+/*[class='end' i] {*/
+    /*color: deeppink;*/
+    /*font-size: 20px;*/
+    /*font-family: "Yuppy SC";*/
+    /*display: block;*/
+/*}*/
+
+.a-pseudo {
+    justify-content: space-between;
+    width: 400px;
+    display: flex;
+    border: 1px solid;
+}
+/* 样式之间有无空格 */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.a:link {
+    color: deeppink;
+}
+.a:hover {
+    color: aqua !important;
+}
+/* 点击时 */
+.a:active {
+    color: chartreuse !important;
+}
+/* 访问后 */
+.a:visited {
+    color: #d1d1d1;
+}
+
+.text-pseudo .first-line:first-line {
+    background-color: aqua;
+}
+.text-pseudo .first-letter::first-letter {
+    font-size: 32px;
+    font-family: "Libian SC";
+}
+.text-pseudo .first-letter::selection {
+    background-color: aqua;
+    color: white;
+}
+
+.text-pseudo .first-letter::before {
+    content: '[?!]首字母';
+    clear: both;
+}
+
+.empty:empty {
+    width: 100px;
+    height: 100px;
+    border: 1px dashed;
+}
+
+:target {
+    background-color: aqua;
+    animation: change-color 1s ;
+    -webkit-animation: change-color 1s forwards;
+}
+@keyframes change-color {
+    0% { background-color: aqua }
+    100% { background-color: #f5f5f5 }
+}
+
+
+
+
+
+.outer-bottom {
+    bottom: 0;
+}
+.outer-bottom::after {
+    content: '<div id="cli_dialog_div"></div>';
+}

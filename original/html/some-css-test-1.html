@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <title>something new to test</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/some-css-test-1.css">
+</head>
+<body>
+
+
+<div class="clear-test">
+    <div class="fl"></div>
+    <div class="no-float"></div>
+    <span>this is a span element</span>
+</div>
+
+<div class="geo">
+    <button class="showGeo" onclick="showGeo()" >显示地理位置</button>
+    地理位置测试：<span></span>
+</div>
+
+<div class="border-test">
+    This is<br>a test<br>about <br>image border
+</div>
+
+<div class="selectors">
+    三个css3的新选择器：<br>
+    <span class="1-span-1">[class*='span']可以匹配span-1,1-span等样式，包含span样式名</span>
+    <span class="start">[class^='start']可以匹配start-1,start等样式，以start样式名开头</span>
+    <span class="end-123">[class$='-123']可以匹配-123,123-123等样式，以-end样式名结尾</span>
+    <span class="END">[class='end' i]可以匹配end,eNd, END等样式，忽略大小写</span>
+</div>
+
+<div class="pseudo">
+    <div class="a-pseudo">
+        <a class="a" href="https://www.baidu.com" target="_blank">百度一下 你就上当</a>
+        <span>justify-content</span>
+    </div>
+
+    <div class="text-pseudo">
+        <p class="first-line">一共有两行文字，第一行有效果<br>第二行没有效果</p>
+        <p class="first-letter">The first letter is bigger than others</p>
+    </div>
+
+    <div class="empty"></div>
+
+    <a href="#target-1" class="a">Go to target-1</a>
+    <div id="target-1">the target selector does work!</div>
+</div>
+
+<div class="tips">
+    <div class="tip">
+        <ul>
+            <li>a:nth-child(3)，第三个子元素且是a标签，a:nth-child(even)，第偶数个且是a标签的；</li>
+            <li>a:nth-last-child(3)，倒数第三个子元素且是a标签，a:nth-last-child(odd)，倒数奇数且是a标签的；</li>
+        </ul>
+        <ul>
+            <li>a:nth-of-type(3)，子元素里第三个a标签，a:nth-of-type(even)，子元素里第偶数个a标签；</li>
+            <li>a:nth-last-of-type(3)，子元素里a标签的倒数第三个，a:nth-last-of-type(odd)，子元素里a标签的倒数奇数个；</li>
+        </ul>
+    </div>
+</div>
+
+
+</body>
+
+<footer class="outer-bottom">
+    用谷歌浏览器打开的网页会在页面上加一个
+</footer>
+<script src="../js/others/jquery-3.1.1.min.js"></script>
+<script src="../js/self/some-css-test-1.js"></script>
+
+</html>
+
+
